@@ -7,22 +7,22 @@ import CommonSection from "../components/UI/CommonSection";
 import "../styles/contact.css";
 
 const socialLinks = [
+  // {
+  //   url: "#",
+  //   icon: "ri-facebook-line",
+  // },
   {
-    url: "#",
-    icon: "ri-facebook-line",
-  },
-  {
-    url: "#",
+    url: "https://www.instagram.com/realdealcars_/",
     icon: "ri-instagram-line",
   },
   {
-    url: "#",
-    icon: "ri-linkedin-line",
+    url: "https://wa.me/919326046996",
+    icon: "ri-whatsapp-line",
   },
-  {
-    url: "#",
-    icon: "ri-twitter-line",
-  },
+  // {
+  //   url: "#",
+  //   icon: "ri-twitter-line",
+  // },
 ];
 
 const Contact = () => {
@@ -60,29 +60,31 @@ const Contact = () => {
               <div className="contact__info">
                 <h6 className="fw-bold">Contact Information</h6>
                 <p className="section__description mb-0">
-                  123 ZindaBazar, Sylhet, Bangladesh
+                  Mumbai, Maharashtra
                 </p>
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="fs-6 mb-0">Phone:</h6>
-                  <p className="section__description mb-0">+88683896366</p>
+                  <p className="section__description mb-0">+91-99205-33056</p>
                 </div>
 
-                <div className=" d-flex align-items-center gap-2">
+                {/* <div className=" d-flex align-items-center gap-2">
                   <h6 className="mb-0 fs-6">Email:</h6>
                   <p className="section__description mb-0">example@gmail.com</p>
-                </div>
+                </div> */}
 
                 <h6 className="fw-bold mt-4">Follow Us</h6>
 
                 <div className=" d-flex align-items-center gap-4 mt-3">
                   {socialLinks.map((item, index) => (
-                    <Link
-                      to={item.url}
+                    <a
+                      href={item.url}
                       key={index}
+                      target="_blank"
                       className="social__link-icon"
+                      rel="noreferrer"
                     >
                       <i class={item.icon}></i>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>

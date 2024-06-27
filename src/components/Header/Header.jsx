@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
+import CarLogo from "../../assets/all-images/car_logo.png"
 
 const navLinks = [
   {
@@ -18,10 +19,10 @@ const navLinks = [
     display: "Cars",
   },
 
-  {
-    path: "/blogs",
-    display: "Blog",
-  },
+  // {
+  //   path: "/blogs",
+  //   display: "Blog",
+  // },
   {
     path: "/contact",
     display: "Contact",
@@ -43,7 +44,7 @@ const Header = () => {
               <div className="header__top__left">
                 <span>Need Help?</span>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
+                  <i class="ri-phone-fill"></i>  +91-99205-33056
                 </span>
               </div>
             </Col>
@@ -71,9 +72,9 @@ const Header = () => {
               <div className="logo">
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
-                    <i class="ri-car-line"></i>
+                    <img src={CarLogo} alt="" style={{width:"50px", height:"50px"}}/>
                     <span>
-                      Rent Car <br /> Service
+                      REAL DEAL <br /> CARS
                     </span>
                   </Link>
                 </h1>
@@ -86,8 +87,8 @@ const Header = () => {
                   <i class="ri-earth-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
+                  <h4>Maharashtra</h4>
+                  <h6>Mumbai, Maharashtra</h6>
                 </div>
               </div>
             </Col>
@@ -98,8 +99,8 @@ const Header = () => {
                   <i class="ri-time-line"></i>
                 </span>
                 <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
+                  <h4>Sunday to Saturday</h4>
+                  <h6>9am - 5pm</h6>
                 </div>
               </div>
             </Col>
@@ -111,9 +112,9 @@ const Header = () => {
               className=" d-flex align-items-center justify-content-end "
             >
               <button className="header__btn btn ">
-                <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
-                </Link>
+                <a href="https://wa.me/919326046996" target="_blank" rel="noreferrer">
+                  <i class="ri-phone-line"></i> WhatsApp
+                </a>
               </button>
             </Col>
           </Row>
@@ -145,14 +146,14 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="nav__right">
+            {/* <div className="nav__right">
               <div className="search__box">
                 <input type="text" placeholder="Search" />
                 <span>
                   <i class="ri-search-line"></i>
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </Container>
       </div>
