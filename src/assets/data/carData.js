@@ -1,4 +1,3 @@
-// import all images from assets/images directory
 import img01 from "../all-images/cars-img/nissan-offer.png";
 import img02 from "../all-images/cars-img/offer-toyota.png";
 import img03 from "../all-images/cars-img/bmw-offer.png";
@@ -16,13 +15,13 @@ const carData = [
     carName: "Tesla Malibu",
     imgUrl: img01,
     model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
+    price: 3500000, // INR
+    speed: "200 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Experience the future of driving with the Tesla Malibu, featuring advanced autopilot capabilities, long-range battery, and a sleek, modern design.",
   },
 
   {
@@ -32,13 +31,13 @@ const carData = [
     carName: "Toyota Aventador",
     imgUrl: img02,
     model: "Model-2022",
-    price: 50,
-    speed: "20kmpl",
+    price: 2800000, // INR
+    speed: "180 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Toyota Aventador offers reliability and efficiency with a stylish design, making it the perfect choice for city driving and long road trips.",
   },
 
   {
@@ -48,13 +47,13 @@ const carData = [
     carName: "BMW X3",
     imgUrl: img03,
     model: "Model-2022",
-    price: 65,
-    speed: "20kmpl",
+    price: 4500000, // INR
+    speed: "210 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The BMW X3 combines luxury and performance, with a powerful engine, advanced technology, and a comfortable, high-end interior.",
   },
 
   {
@@ -64,13 +63,13 @@ const carData = [
     carName: "Nissan Mercielago",
     imgUrl: img04,
     model: "Model-2022",
-    price: 70,
-    speed: "20kmpl",
+    price: 3200000, // INR
+    speed: "190 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Discover the Nissan Mercielago, a perfect blend of power and efficiency with cutting-edge features and a bold design.",
   },
 
   {
@@ -80,13 +79,13 @@ const carData = [
     carName: "Ferrari Camry",
     imgUrl: img05,
     model: "Model-2022",
-    price: 45,
-    speed: "20kmpl",
+    price: 6000000, // INR
+    speed: "220 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Experience the thrill of driving a Ferrari with the Camry, boasting a powerful engine, exquisite craftsmanship, and unparalleled performance.",
   },
 
   {
@@ -96,13 +95,13 @@ const carData = [
     carName: "Mercedes Benz XC90",
     imgUrl: img06,
     model: "Model-2022",
-    price: 85,
-    speed: "20kmpl",
+    price: 5500000, // INR
+    speed: "200 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "The Mercedes Benz XC90 offers luxury and sophistication with advanced safety features, a spacious interior, and a smooth, powerful ride.",
   },
 
   {
@@ -112,29 +111,29 @@ const carData = [
     carName: "Audi Fiesta",
     imgUrl: img07,
     model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
+    price: 3700000, // INR
+    speed: "190 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Drive in style with the Audi Fiesta, featuring cutting-edge technology, a sporty design, and superior handling for an exhilarating driving experience.",
   },
 
   {
     id: 8,
-    brand: "Colorado",
+    brand: "Rolls Royce",
     rating: 52,
     carName: "Rolls Royce Colorado",
     imgUrl: img08,
     model: "Model 3",
-    price: 50,
-    speed: "20kmpl",
+    price: 8000000, // INR
+    speed: "210 km/h",
     gps: "GPS Navigation",
     seatType: "Heated seats",
     automatic: "Automatic",
     description:
-      " Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam. Dolor labore lorem no accusam sit justo sadipscing labore invidunt voluptua, amet duo et gubergren vero gubergren dolor. At diam.",
+      "Indulge in the ultimate luxury with the Rolls Royce Colorado, offering unparalleled comfort, state-of-the-art features, and timeless elegance.",
   },
 ];
 
